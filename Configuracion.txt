@@ -1,4 +1,3 @@
-Origen=C:\Python\Source
+Lote#1Origen=C:\Python\Source
 Destino=C:\Python\Destination
-CopyFiles=txt,docs
-MoveFiles=xlsx
+CopyFiles=txt,docsLote#2Origen=C:\Python\SourceDestino=C:\Python\DestinationMoveFiles=xlsx
