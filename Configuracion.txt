@@ -1,0 +1,4 @@
+Origen=C:\Python\Source
+Destino=C:\Python\Destination
+CopyFiles=txt,docs
+MoveFiles=xlsx
