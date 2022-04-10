@@ -4,14 +4,14 @@ Autor: Josué David Campos Álvarez
 Curso: Programación II
 Universidad Internacional de las Américas'''
 
-# Importar modulos
+# Importar modulos.
 import logging
 import random, string
 import threading
 
-# Funcion para escribir el archivo
+# Funcion para escribir el archivo.
 def EscribirArchivo():
-    logging.info("Iniciando Escritura....") # Especifica cuando ha iniciado la escritura
+    logging.info("Iniciando Escritura....") # Especifica cuando ha iniciado la escritura.
     try:
         archivo = open("Datos.txt",'at')
         contador = 1
@@ -26,11 +26,11 @@ def EscribirArchivo():
     except BaseException as bE:
         archivo.close()
         print(bE)
-    logging.info("Finalizando escritura....") # Especifica cuando ha finalizado la escritura
+    logging.info("Finalizando escritura....") # Especifica cuando ha finalizado la escritura.
 
-# Funcion para leer el archivo
+# Funcion para leer el archivo.
 def LecturaArchivo():
-    logging.info("Iniciando Lectura....") # Especifica cuando ha iniciado la lectura
+    logging.info("Iniciando Lectura....") # Especifica cuando ha iniciado la lectura.
     try:   
         archivo = open("Datos.txt",'rt')
         lines = 1
@@ -45,7 +45,7 @@ def LecturaArchivo():
     except BaseException as bE:
         archivo.close()
         print(bE)
-    logging.info("Finalizando Lectura....") # Especifica cuando ha finalizado la lectura
+    logging.info("Finalizando Lectura....") # Especifica cuando ha finalizado la lectura.
 
 if __name__ == "__main__": 
     format = "%(asctime)s: %(message)s"
@@ -53,14 +53,14 @@ if __name__ == "__main__":
                         datefmt="%H:%M:%S")
 
     
-    logging.info("Antes de crear escritura") # Especifica cuando se crea el thread de escritura
-    t = threading.Thread(target=EscribirArchivo) # Thread de escritura
-    logging.info("Antes de iniciar escritura") # Especifica cuando se va a iniciar la escritura
-    t.start() # Iniciar thread de escritura
+    logging.info("Antes de crear escritura") # Especifica cuando se crea el thread de escritura.
+    t = threading.Thread(target=EscribirArchivo) # Thread de escritura.
+    logging.info("Antes de iniciar escritura") # Especifica cuando se va a iniciar la escritura.
+    t.start() # Iniciar thread de escritura.
 
 
-    logging.info("Antes de crear lectura") # Especifica cuando se crea el thread de lectura
-    c = threading.Thread(target=LecturaArchivo) # Thread de lectura
-    logging.info("Antes de iniciar lectura") # Especifica cuando se va a iniciar la lectura
-    c.start() # Iniciar thread de lectura
-    c.join() # Esperar a que finalice el thread de lectura
+    logging.info("Antes de crear lectura") # Especifica cuando se crea el thread de lectura.
+    c = threading.Thread(target=LecturaArchivo) # Thread de lectura.
+    logging.info("Antes de iniciar lectura") # Especifica cuando se va a iniciar la lectura.
+    c.start() # Iniciar thread de lectura.
+    c.join() # Esperar a que finalice el thread de lectura.
