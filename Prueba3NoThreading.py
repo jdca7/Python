@@ -2,7 +2,8 @@
 Fecha: 10/04/2022
 Autor: Josué David Campos Álvarez
 Curso: Programación II
-Universidad Internacional de las Américas'''
+Universidad Internacional de las Américas
+Laboratorio: #7'''
 
 # Importar modulos.
 import logging
