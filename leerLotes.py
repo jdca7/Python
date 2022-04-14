@@ -1,11 +1,4 @@
-#import os, shutil
-
-def leerLotes():
+def leer():
     with open('Configuracion.txt', 'r') as f:
         lines = f.read()
-        print(lines)
-
-#def modificarLotes():
-file = open("Configuracion.txt","w")
-file.write(input() + "\r")
-file.close()
+        print("\n"+lines+"\n")

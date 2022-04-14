@@ -7,6 +7,7 @@ Universidad Internacional de las Américas'''
 import os, shutil
 
 def move():
+    
     with open('Configuracion.txt', 'r') as f:
         lines = f.read()
 

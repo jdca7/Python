@@ -5,9 +5,10 @@ Curso: Programación II
 Universidad Internacional de las Américas'''
 
 def clients():
+        
         file = open("Clientes.txt","w")
         file.write(input() + "\r")
         file.close()
 
 
-
+clients()
