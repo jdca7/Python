@@ -1,3 +1,9 @@
-Lote#1Origen=C:\Python\Source_Lote1
+Lote#1
+Origen=C:\Python\Source_Lote1
 Destino=C:\Python\Destination_Lote1
-CopyFiles=txt,docsLote#2Origen=C:\Python\Source_Lote2Destino=C:\Python\Destination_Lote2MoveFiles=xlsx
+CopyFiles=txt,doc
+
+Lote#2
+Origen=C:\Python\Source_Lote2
+Destino=C:\Python\Destination_Lote2
+MoveFiles=xlsx
