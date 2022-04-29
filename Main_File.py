@@ -30,24 +30,31 @@ while (True):
             #Opcion 1 función para leer lotes.
             if num == 1:
                 LeerLotes.leer()
+
             #Opcion 2 función para modificar lotes.
             if num == 2:
                 ModificarLotes.modificar()
+
             #Opcion 3 función para crear un lote.
             if num == 3:
                 NuevoLote.newLote()
+
             #Opcion 4 función para mover o copiar.
             if num == 4:
                 Ejecutar.ejec()
+
             #Opcion 5 función para leer la bitacora.
             if num == 5:
                 leerBitacora.leerBita()
+
             #Opcion 6 función para borrar lotes.
             if num == 6:
                 borrarLote.borrar()
-            #Opcion 6 función para borrar bitacora.
+
+            #Opcion 7 función para borrar bitacora.
             if num == 7:
                 BorrarBitacora.borrarbit()
+                
             #Opcion 8 función para salir.
             if num == 8:
                 break

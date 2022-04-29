@@ -12,6 +12,7 @@ def borrar():
 
     #Abre el file para lectura
     with open('Configuracion.txt', 'r') as f:
+        
         # Enumera las lineas
         for num, line in enumerate(f, 1):
             #Si el número de lote en la linea
